@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  background: url(./alpine-3902483.jpg) no-repeat center / 100% 100%;
+}
+.snow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.snow-1 {
+  background: url(./snwflace.png) round;
+  animation: animate1 10s linear infinite;
+}
+
+@keyframes animate1 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40% 100%;
+  }
+}
+
+.snow-2 {
+  background: url(./snowflace-2.png) round;
+  animation: animate2 15s linear infinite;
+}
+
+@keyframes animate2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
