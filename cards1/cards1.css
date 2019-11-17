@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  display: flex;
+  background-image: linear-gradient(0deg, #fff 50%, #2196f3);
+}
+
+.conteiner {
+  margin: auto;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+}
+
+.conteiner:hover .conteiner__item {
+  filter: blur(5px);
+  transform: scale(0.7);
+}
+
+.conteiner__item {
+  flex: 0 0 250px;
+  cursor: pointer;
+  padding-top: 40px;
+  text-align: center;
+  position: relative;
+  background-color: #fff;
+  transition: transform 0.5s, background-color 0.5s, color 0.3s;
+}
+div.conteiner__item.card.toindex:hover {
+  filter: blur(0px);
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+div.conteiner__item.card.toindex::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  z-index: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+div.conteiner__item.card.toindex:hover h3,
+div.conteiner__item.card.toindex:hover p,
+div.conteiner__item.card.toindex:hover .btn {
+  color: #ffffff;
+}
+div.conteiner__item.card.toindex:hover::after {
+  background-color: rgba(0, 0, 0, 1);
+}
+.conteiner__item:hover {
+  filter: blur(0px);
+}
+h3 {
+  font-size: 3em;
+  z-index: 1;
+  position: relative;
+}
+.btn {
+  color: #ffffff;
+  background-color: #262262;
+  border: none;
+  z-index: 1;
+  position: relative;
+  padding: 5px 10px;
+}
+
+p {
+  z-index: 1;
+  position: relative;
+}
+
+.btn:hover {
+  background-color: #2916f3;
+}
