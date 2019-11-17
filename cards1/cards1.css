@@ -33,7 +33,7 @@ body {
 div.conteiner__item.card.toindex:hover {
   filter: blur(0px);
   transform: scale(1.1);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: gray;
 }
 div.conteiner__item.card.toindex::after {
   content: "";
@@ -65,8 +65,11 @@ h3 {
   background-color: #262262;
   border: none;
   z-index: 1;
+  cursor: pointer;
   position: relative;
   padding: 5px 10px;
+  margin-top: 10px;
+  padding: 10px 15px;
 }
 
 p {
@@ -75,5 +78,5 @@ p {
 }
 
 .btn:hover {
-  background-color: #2916f3;
+  background-color: #2196f3;
 }
