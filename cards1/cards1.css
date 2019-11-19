@@ -12,6 +12,7 @@ body {
 .conteiner {
   margin: auto;
   display: flex;
+  max-width: 1000px;
   height: 300px;
   justify-content: center;
 }
