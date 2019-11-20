@@ -40,26 +40,33 @@ body{
 .list__item .hint{
 	position: absolute;
 	opacity: 0;
-	transition: .5s;
+	transition: opacity .5s,
+				top .5s;
 	background-color: #fff;
 	width: 400px;
 	padding: 20px;
-	transform: translate(-50%, -150%);
+	top: -50px;
+	left: 0;
+	transform: translate(-50%, -100%);
 }
 
 .list__item .hint::after{
 	content: '';
 	position: absolute;
-	bottom: 0;
+	bottom: -30px;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translateX(-25%);
 	width: 0;
 	height: 0;
-	border-right: 4px solid transparent;
-	border-left: 4px solid transparent;
+	border-right: 20px solid transparent;
+	border-left: 20px solid transparent;
+	border-top: 15px solid #fff;
+	border-bottom: 15px solid transparent;
 }
 
 .list__item:hover .hint {
+	display: block;
 	opacity: .9;
-	transform: translate(-50% , -130%);
+	top: -25px;
+	transform: translate(-50% , -100%);
 }
